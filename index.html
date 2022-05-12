@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Sandbox</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/icons/foundation-icons.css " />
+    <link rel="stylesheet" href="css/app.css" />
+    <style>
+      .spacer {
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Site Title</li>
+          <li>
+            <a href="#"><i class="fi-heart"></i> Link 1</a>
+            <ul class="menu vertical">
+              <li><a href="">One</a></li>
+              <li><a href="">Two</a></li>
+              <li><a href="">Three</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fi-list"></i>Link 2</a>
+            <ul class="menu vertical">
+              <li><a href="">One</a></li>
+              <li><a href="">Two</a></li>
+              <li><a href="">Three</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fi-list"></i>Link 3</a>
+          </li>
+          <li>
+            <a href="#"><i class="fi-list"></i>Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search" /></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYPOGRAPHY -->
+    <div class="row">
+      <!-- Heading -->
+      <h1>Heading <small>Secondary Text</small></h1>
+      <h2 class="subheader">Heading <small>Secondary Text</small></h2>
+      <h3>Heading <small>Secondary Text</small></h3>
+      <h4>Heading <small>Secondary Text</small></h4>
+      <h5>Heading <small>Secondary Text</small></h5>
+      <h6>Heading <small>Secondary Text</small></h6>
+      <!-- Paragraph -->
+      <p class="lead">
+        <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing
+        elit. Donec diam enim, faucibus eget augue in, vehicula
+        <em>facilisis</em> lectus. Duis condimentum nec ipsum sit amet
+        porttitor. <a href="#">Nunc iaculis</a> mattis enim in tristique. Proin
+        eget mattis ante.
+      </p>
+      <p>
+        <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing
+        elit. Donec diam enim, faucibus eget augue in, vehicula
+        <em>facilisis</em> lectus. Duis condimentum nec ipsum sit amet
+        porttitor. <a href="#">Nunc iaculis</a> iaculis mattis enim in
+        tristique. Proin eget mattis ante.
+      </p>
+      <p>Server Up-Time</p>
+      <div class="stat">250</div>
+      <hr />
+      <!-- ALIGHTMENT CLASSES -->
+      <p class="text-left">Left Aligned Text.</p>
+      <p class="text-center">Center Aligned Text.</p>
+      <p class="text-right">Right Aligned Text.</p>
+      <p class="text-justify">Justified Text.</p>
+
+      <!-- FLOATS -->
+      <div class="callout clearfix">
+        <a href="#" class="button float-left">Left</a>
+        <a href="#" class="button float-right">Right</a>
+      </div>
+      <hr />
+      <code>&lt;div class="myClass"&gt; Hello World &lt;/div&gt;</code>
+      <p>Press <kbd>Cmd+r</kbd> (or <kbd>Ctrl+r</kbd> on Windows)</p>
+      <hr />
+      <blockquote>
+        This is a blockquote from foundation
+        <cite>Jhon Doe</cite>
+      </blockquote>
+
+      <ul class="no-bullet">
+        <li>Item One</li>
+        <li>
+          Item Two
+          <ul>
+            <li>Nested Item</li>
+            <li>Nested Item</li>
+            <li>Nested Item</li>
+          </ul>
+        </li>
+        <li>Item Three</li>
+      </ul>
+
+      <ol>
+        <li>Item One</li>
+        <li>
+          Item Two
+          <ul>
+            <li>Nested Item</li>
+            <li>Nested Item</li>
+            <li>Nested Item</li>
+          </ul>
+        </li>
+        <li>Item Three</li>
+      </ol>
+
+      <p class="hide">Hidded</p>
+      <p class="invisible">Invisible</p>
+      <p style="background-color: skyblue">
+        You are on a small screen or larger
+      </p>
+      <p class="show-for-medium" style="background-color: orangered">
+        You are on a medium screen or larger
+      </p>
+      <p class="show-for-large" style="background-color: blue">
+        You are on a large screen or larger
+      </p>
+      <p class="hide-for-small-only" style="background-color: orange">
+        You are not on a small screen
+      </p>
+      <p class="hide-for-medium-only" style="background-color: yellow">
+        You are not on a medium screen
+      </p>
+      <p class="hide-for-large-only" style="background-color: purple">
+        You are not on a large screen
+      </p>
+      <p class="show-for-landscape" style="background-color: rgb(0, 110, 255)">
+        You are in landscape
+      </p>
+      <p class="show-for-portrait" style="background-color: red">
+        You are in potrait
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <button class="button">Button</button>
+      <a href="#" class="button">Link</a>
+      <input type="submit" value="Input" class="button" />
+      <br />
+      <button class="success button">Button</button>
+      <button class="alert button">Button</button>
+      <button class="warning button">Button</button>
+      <button class="secondary button">Button</button>
+      <button class="disabled button">Button</button>
+      <br />
+      <button class="button tiny">Button</button>
+      <button class="button small">Button</button>
+      <button class="button">Button</button>
+      <button class="button large">Button</button>
+      <button class="button expanded">Button</button>
+      <button class="button expanded large">Button</button>
+      <br />
+      <button class="success button hollow">Button</button>
+      <button class="alert button hollow">Button</button>
+      <button class="warning button hollow">Button</button>
+      <button class="secondary button hollow">Button</button>
+    </div>
+    <hr />
+    <div class="row">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name" />
+      </div>
+
+      <div>
+        <label for="Email">Email</label>
+        <input type="email" placeholder="Email" />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" />
+        <p class="help-text">Your password must be 8 chars or more</p>
+      </div>
+
+      <div>
+        <label for="number">Number</label>
+        <input type="number" min="0" placeholder="Number" />
+      </div>
+
+      <div>
+        <label for="message">Messsage</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="gender">Gender</label>
+        <select>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="gender">Gender</label>
+        <select multiple>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <fieldset class="fieldset">
+        <legend>A Fieldset</legend>
+        <input type="checkbox" /><label for="checkbox">Checkbox</label>
+        <input type="checkbox" /><label for="checkbox">Checkbox</label>
+        <input type="checkbox" /><label for="checkbox">Checkbox</label>
+      </fieldset>
+
+      <label for="fileUpload" class="button">Upload File</label>
+      <input type="file" id="fileUpload" class="show-for-sr" />
+
+      <div class="input-group">
+        <span class="input-group-label">@</span>
+        <input
+          type="email"
+          class="input-group-field"
+          placeholder="example@gmail.com"
+        />
+        <div class="input-group-button">
+          <input type="submit" class="button" value="Submit" />
+        </div>
+      </div>
+      <br />
+      <div class="switch">
+        <input
+          class="switch-input"
+          id="mySwitch"
+          type="checkbox"
+          name="exampleSwitch"
+        />
+        <label for="mySwitch" class="switch-paddle">
+          <span class="show-for-sr">Enabled</span>
+        </label>
+      </div>
+
+      <br />
+      <div class="slider" data-slider data-initial-start="0" data-end="20">
+        <span
+          class="slider-handle"
+          data-slider-handle
+          role="slider"
+          tabindex="1"
+        ></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <input type="hidden" />
+      </div>
+
+      <div class="row">
+        <ul class="menu">
+          <li class="menu-text">Site Title</li>
+          <li><a href="#">Link 1</a></li>
+          <li class="active"><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <ul class="menu icon-left">
+          <li class="menu-text">Site Title</li>
+          <li>
+            <a href="#"><i class="fi-heart"></i> Link 1</a>
+          </li>
+          <li>
+            <a href="#"><i class="fi-list"></i>Link 2</a>
+          </li>
+          <li>
+            <a href="#"><i class="fi-list"></i>Link 3</a>
+          </li>
+          <li>
+            <a href="#"><i class="fi-list"></i>Link 4</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="callout">
+          <p>This is an example of a callout</p>
+        </div>
+        <div class="callout secondary">
+          <p>This is an example of a callout</p>
+        </div>
+        <div class="callout success">
+          <p>This is an example of a callout</p>
+        </div>
+        <div class="callout warning">
+          <p>This is an example of a callout</p>
+        </div>
+        <div class="callout alert">
+          <p>This is an example of a callout</p>
+        </div>
+      </div>
+
+      <div class="progress" role="progressbar">
+        <div class="progress-meter" style="width: 25%">
+          <p class="progress-meter-text">25%</p>
+        </div>
+      </div>
+
+      <div class="success progress" role="progressbar">
+        <div class="progress-meter" style="width: 45%">
+          <p class="progress-meter-text">45%</p>
+        </div>
+      </div>
+
+      <div class="secondary progress" role="progressbar">
+        <div class="progress-meter" style="width: 65%">
+          <p class="progress-meter-text">65%</p>
+        </div>
+      </div>
+
+      <div class="alert progress" role="progressbar">
+        <div class="progress-meter" style="width: 85%">
+          <p class="progress-meter-text">85%</p>
+        </div>
+      </div>
+
+      <div class="warning progress" role="progressbar">
+        <div class="progress-meter" style="width: 100%">
+          <p class="progress-meter-text">100%</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <span class="label">Label</span>
+      <span class="secondary label">Secondary Label</span>
+      <span class="success label">Success Label</span>
+      <span class="alert label">Alert Label</span>
+      <span class="warning label">Warning Label</span>
+
+      <hr />
+
+      <span class="badge">1</span>
+      <span class="secondary badge">2</span>
+      <span class="success badge">3</span>
+      <span class="alert badge">4</span>
+      <span class="warning badge">5</span>
+
+      <hr />
+
+      <nav class="navigation">
+        <ul class="breadcrumbs">
+          <li><a href="">Home</a></li>
+          <li class="disabled">Disabled</li>
+          <li><a href="">Posts</a></li>
+          <li>Hello World</li>
+        </ul>
+      </nav>
+
+      <hr />
+
+      <ul class="pagination" role="navigation">
+        <li class="disabled">Previous</li>
+        <li class="current">1</li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li class="ellipsis"></li>
+        <li><a href="">13</a></li>
+        <li><a href="">14</a></li>
+        <li><a href="">Next</a></li>
+      </ul>
+
+      <hr />
+
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-8">
+          <h3>Main Column</h3>
+          <p>
+            Team up with our designers to see how our iterative design process
+            can get your project going. Equipped with our Progressive Design
+            process, visual skills, and the coding chops that brought you
+            Foundation, ZURB Studios is ready to jump in and get your product
+            out to the masses!
+          </p>
+        </div>
+        <div class="cell large-4">
+          <h3>Sidebar</h3>
+          <p>
+            Team up with our designers to see how our iterative design process
+            can get your project going.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-3 medium-3">
+          <h3>Box</h3>
+          <p>
+            Team up with our designers to see how our iterative design process
+            can get your project going. Equipped with our Progressive Design
+            process, visual skills,
+          </p>
+        </div>
+        <div class="cell large-3 medium-3">
+          <h3>Box</h3>
+          <p>
+            Team up with our designers to see how our iterative design process
+            can get your project going. Equipped with our Progressive Design
+            process, visual skills,
+          </p>
+        </div>
+        <div class="cell large-3 medium-3">
+          <h3>Box</h3>
+          <p>
+            Team up with our designers to see how our iterative design process
+            can get your project going. Equipped with our Progressive Design
+            process, visual skills,
+          </p>
+        </div>
+        <div class="cell large-3 medium-3">
+          <h3>Box</h3>
+          <p>
+            Team up with our designers to see how our iterative design process
+            can get your project going. Equipped with our Progressive Design
+            process, visual skills,
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-x">
+        <div class="cell large-12 large-offset-6">
+          <h3>Box</h3>
+          <p>
+            Team up with our designers to see how our iterative design process
+          </p>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
